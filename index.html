@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anju Yadav Compliance & Legal Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:#FAF8F3;--cream2:#F3F0E8;--cream3:#EDE8DB;--white:#FFFFFF;
+  --navy:#0D2240;--navy2:#142E55;--gold:#A07830;--gold2:#C49A3C;--gold3:#E8C46A;--gold-light:#FDF3DC;
+  --text:#1A1A2E;--text2:#4A5568;--text3:#8A96A8;
+  --green:#2D6A4F;--green-bg:#E8F5EE;--red:#C0392B;--red-bg:#FDEDEB;
+  --amber:#92600A;--amber-bg:#FEF3E2;--blue:#1E4D8C;--blue-bg:#EBF2FB;
+  --teal:#1A6B6A;--teal-bg:#E5F4F4;--border:#DDD8CC;--border2:#C8C2B4;
+  --shadow:0 2px 12px rgba(13,34,64,.08);--shadow-lg:0 8px 32px rgba(13,34,64,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text);font-family:'Outfit',sans-serif;overflow-x:hidden}
+.ticker-wrap{background:var(--navy);overflow:hidden;white-space:nowrap;padding:8px 0}
+.ticker-inner{display:inline-block;animation:ticker 40s linear infinite}
+.ticker-inner span{margin:0 36px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;color:var(--gold3);font-weight:500}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+header{background:var(--white);border-bottom:1px solid var(--border);padding:16px 48px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:300;box-shadow:var(--shadow)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:36px;height:36px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
+.logo-text{font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);font-weight:700}
+.logo-sub{font-size:10px;color:var(--text3);letter-spacing:1px;font-family:'DM Mono',monospace}
+nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--text2);text-decoration:none;font-size:11px;letter-spacing:.5px;padding:7px 13px;border:1px solid transparent;border-radius:6px;font-weight:500;transition:all .2s}
+nav a:hover{border-color:var(--navy);color:var(--navy);background:var(--cream)}
+.nav-cart{border:1px solid var(--border)!important;color:var(--navy)!important;position:relative}
+.nav-hire{background:var(--navy)!important;color:var(--white)!important;border-color:var(--navy)!important}
+.cart-badge{position:absolute;top:-6px;right:-6px;background:var(--red);color:#fff;border-radius:50%;width:16px;height:16px;font-size:9px;font-weight:700;display:none;align-items:center;justify-content:center}
+.hero{max-width:1280px;margin:0 auto;padding:64px 48px 52px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:start}
+.avail-tag{display:inline-flex;align-items:center;gap:8px;background:var(--green-bg);border:1px solid rgba(45,106,79,.25);color:var(--green);font-size:10px;padding:5px 14px;border-radius:20px;letter-spacing:1.5px;margin-bottom:18px;font-weight:600}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+h1{font-family:'Playfair Display',serif;font-size:54px;line-height:1.08;margin-bottom:14px;color:var(--navy)}
+h1 em{font-style:italic;color:var(--gold)}
+.hero-desc{color:var(--text2);font-size:13px;line-height:1.9;margin-bottom:12px;max-width:520px}
+.reloc-tag{display:inline-flex;align-items:center;gap:6px;background:var(--blue-bg);border:1px solid rgba(30,77,140,.2);color:var(--blue);font-size:10px;padding:5px 14px;border-radius:20px;letter-spacing:1px;margin-bottom:24px;font-weight:600}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.btn{padding:11px 22px;font-weight:600;font-size:12px;letter-spacing:.5px;border-radius:8px;text-decoration:none;transition:all .2s;cursor:pointer;border:none;display:inline-flex;align-items:center;gap:6px}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy2);transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border2)}
+.btn-outline:hover{border-color:var(--navy);background:var(--cream2)}
+.hero-badges{display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:5px;background:var(--cream2);border:1px solid var(--border);color:var(--text2);font-size:10px;padding:4px 10px;border-radius:20px;font-weight:500}
+.dash-grid{display:flex;flex-direction:column;gap:12px}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:18px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.stat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.sc-green::after{background:var(--green)}.sc-gold::after{background:var(--gold)}.sc-navy::after{background:var(--navy)}.sc-teal::after{background:var(--teal)}
+.stat-label{font-size:9px;color:var(--text3);letter-spacing:1.5px;margin-bottom:6px;font-weight:600;text-transform:uppercase}
+.stat-val{font-family:'Playfair Display',serif;font-size:28px;color:var(--navy)}
+.stat-note{font-size:10px;color:var(--text2);margin-top:4px}
+.meter-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+.meter-hd{font-size:9px;color:var(--text3);letter-spacing:1.5px;margin-bottom:14px;font-weight:600;text-transform:uppercase}
+.m-row{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.m-name{font-size:10px;color:var(--text2);width:150px;flex-shrink:0;font-weight:500}
+.m-bar{flex:1;height:5px;background:var(--cream3);border-radius:3px;overflow:hidden}
+.m-fill{height:100%;border-radius:3px;width:0;transition:width 1.4s ease}
+.m-pct{font-size:10px;color:var(--text3);width:32px;text-align:right;font-family:'DM Mono',monospace}
+.section{max-width:1280px;margin:0 auto;padding:52px 48px}
+.sec-hd{display:flex;align-items:center;gap:14px;margin-bottom:32px;padding-bottom:16px;border-bottom:2px solid var(--cream3)}
+.sec-title{font-family:'Playfair Display',serif;font-size:28px;color:var(--navy)}
+.sec-tag{background:var(--navy);color:var(--gold3);font-size:9px;padding:4px 12px;border-radius:20px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+.sec-count{margin-left:auto;font-size:11px;color:var(--text3);font-family:'DM Mono',monospace}
+.divider{border:none;border-top:1px solid var(--border)}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.sk-card{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;transition:all .25s;position:relative;overflow:hidden}
+.sk-card:hover{border-color:var(--navy);transform:translateY(-2px);box-shadow:var(--shadow)}
+.sk-card.carted{border-color:var(--green);background:var(--green-bg)}
+.sk-icon{font-size:22px;margin-bottom:7px}
+.sk-name{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.sk-lvl{font-size:9px;color:var(--text3);margin-bottom:7px;font-family:'DM Mono',monospace}
+.sk-bar{height:3px;background:var(--cream3);border-radius:2px;overflow:hidden}
+.sk-fill{height:100%;background:var(--gold);border-radius:2px}
+.sk-badge{position:absolute;top:8px;right:8px;font-size:8px;padding:2px 6px;border-radius:8px;font-weight:700;letter-spacing:.5px}
+.badge-hot{background:var(--red-bg);color:var(--red);border:1px solid rgba(192,57,43,.2)}
+.badge-new{background:var(--green-bg);color:var(--green);border:1px solid rgba(45,106,79,.2)}
+.badge-best{background:var(--gold-light);color:var(--gold);border:1px solid rgba(160,120,48,.2)}
+.exp-list{display:flex;flex-direction:column;gap:14px}
+.exp-card{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:24px;display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:start;cursor:pointer;transition:all .2s;box-shadow:var(--shadow)}
+.exp-card:hover{border-color:var(--navy);background:var(--cream)}
+.exp-logo{width:56px;height:56px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.exp-title{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:3px}
+.exp-firm{font-size:12px;color:var(--gold);margin-bottom:4px;font-weight:600}
+.exp-meta{font-size:10px;color:var(--text3);margin-bottom:10px;font-family:'DM Mono',monospace}
+.exp-tags{display:flex;flex-wrap:wrap;gap:5px}
+.etag{background:var(--cream2);border:1px solid var(--border);color:var(--text2);font-size:9px;padding:3px 8px;border-radius:5px;font-weight:500}
+.exp-bullets{display:none;margin-top:14px;border-top:1px solid var(--border);padding-top:14px;list-style:none}
+.exp-bullets.open{display:block}
+.exp-bullets li{font-size:12px;color:var(--text2);line-height:1.8;margin-bottom:8px;padding-left:18px;position:relative}
+.exp-bullets li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:600}
+.exp-toggle{font-size:10px;color:var(--text3);margin-top:10px;text-decoration:underline;cursor:pointer;font-family:'DM Mono',monospace}
+.pill{font-size:9px;padding:4px 10px;border-radius:20px;font-weight:700;letter-spacing:.5px;white-space:nowrap}
+.pill-done{background:var(--green-bg);color:var(--green);border:1px solid rgba(45,106,79,.25)}
+.pill-top{background:var(--gold-light);color:var(--gold);border:1px solid rgba(160,120,48,.25)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.proj-card{background:var(--white);border:1.5px solid var(--border);border-radius:16px;overflow:hidden;transition:all .25s;box-shadow:var(--shadow)}
+.proj-card:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.proj-hd{padding:20px;background:var(--navy);display:flex;align-items:flex-start;gap:14px}
+.proj-icon{font-size:28px;flex-shrink:0;margin-top:2px}
+.proj-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--white);margin-bottom:3px;line-height:1.3}
+.proj-type{font-size:9px;color:var(--gold3);letter-spacing:1px;font-weight:600;text-transform:uppercase;font-family:'DM Mono',monospace}
+.proj-body{padding:20px}
+.proj-desc{font-size:11px;color:var(--text2);line-height:1.8;margin-bottom:14px}
+.proj-metrics{display:flex;gap:20px;margin-bottom:16px}
+.metric{text-align:center}
+.metric-val{font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);font-weight:700}
+.metric-lbl{font-size:9px;color:var(--text3);letter-spacing:.5px;font-family:'DM Mono',monospace}
+.proj-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px}
+.ptag{background:var(--cream2);border:1px solid var(--border);color:var(--navy2);font-size:9px;padding:3px 8px;border-radius:5px;font-weight:600}
+.proj-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--navy);text-decoration:none;border:1.5px solid var(--navy);padding:8px 16px;border-radius:8px;font-weight:600;transition:all .2s}
+.proj-link:hover{background:var(--navy);color:var(--white)}
+.proj-link-muted{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);text-decoration:none;border:1.5px solid var(--border);padding:8px 16px;border-radius:8px;font-weight:500;cursor:default}
+.pub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.pub-card{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:20px;transition:all .2s;text-decoration:none;display:block;box-shadow:var(--shadow)}
+.pub-card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.pub-cat{display:inline-block;font-size:9px;padding:3px 10px;border-radius:5px;font-weight:700;margin-bottom:10px;letter-spacing:.5px;text-transform:uppercase}
+.cat-cyber{background:var(--navy);color:var(--gold3)}
+.cat-ma{background:var(--gold-light);color:var(--gold);border:1px solid rgba(160,120,48,.2)}
+.cat-ecom{background:var(--teal-bg);color:var(--teal);border:1px solid rgba(26,107,106,.2)}
+.pub-title{font-family:'Playfair Display',serif;font-size:15px;color:var(--navy);line-height:1.4;margin-bottom:8px;font-weight:600}
+.pub-sub{font-size:11px;color:var(--text2);line-height:1.6;margin-bottom:10px}
+.pub-footer{display:flex;align-items:center;justify-content:space-between}
+.pub-date{font-size:10px;color:var(--text3);font-family:'DM Mono',monospace}
+.pub-arrow{color:var(--gold);font-size:16px}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.cert-card{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:16px;display:flex;align-items:center;gap:12px;transition:border .2s;box-shadow:var(--shadow)}
+.cert-card:hover{border-color:var(--gold)}
+.cert-icon{width:40px;height:40px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.cert-name{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.cert-org{font-size:9px;color:var(--text3);font-family:'DM Mono',monospace}
+.cert-pts{font-size:9px;color:var(--gold);margin-top:3px;font-weight:600}
+.lang-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.lang-card{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:var(--shadow);transition:all .2s}
+.lang-card:hover{border-color:var(--navy);transform:translateY(-2px)}
+.lang-flag{font-size:36px;margin-bottom:10px}
+.lang-name{font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:4px}
+.lang-level{font-size:9px;color:var(--text3);margin-bottom:12px;font-family:'DM Mono',monospace;letter-spacing:.5px;text-transform:uppercase}
+.lang-dots{display:flex;justify-content:center;gap:5px}
+.lang-dot{width:10px;height:10px;border-radius:50%;background:var(--cream3)}
+.lang-dot.filled{background:var(--navy)}
+.edu-timeline{display:flex;flex-direction:column;gap:16px}
+.edu-card{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:24px;display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:start;box-shadow:var(--shadow);transition:all .2s}
+.edu-card:hover{border-color:var(--gold)}
+.edu-icon{width:56px;height:56px;background:var(--cream2);border:2px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:24px}
+.edu-deg{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:3px}
+.edu-inst{font-size:12px;color:var(--gold);margin-bottom:4px;font-weight:600}
+.edu-meta{font-size:10px;color:var(--text3);font-family:'DM Mono',monospace;margin-bottom:8px}
+.edu-tags{display:flex;flex-wrap:wrap;gap:5px}
+.edu-note{font-size:11px;color:var(--text2);margin-top:10px;line-height:1.7;font-style:italic;border-left:3px solid var(--gold);padding-left:12px}
+.roles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:12px}
+.role-card{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:16px;transition:all .2s;box-shadow:var(--shadow)}
+.role-card:hover{border-color:var(--green);transform:translateY(-2px)}
+.role-icon{font-size:20px;margin-bottom:8px}
+.role-title{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.role-note{font-size:9px;color:var(--text3);margin-bottom:8px;font-family:'DM Mono',monospace}
+.match-row{display:flex;align-items:center;gap:6px}
+.match-pct{font-size:10px;color:var(--green);width:30px;flex-shrink:0;font-weight:700;font-family:'DM Mono',monospace}
+.match-bar{flex:1;height:4px;background:var(--cream3);border-radius:2px;overflow:hidden}
+.match-fill{height:100%;background:var(--green);border-radius:2px}
+.cart-overlay{display:none;position:fixed;inset:0;background:rgba(13,34,64,.3);z-index:500}
+.cart-overlay.open{display:block}
+.cart-panel{position:fixed;top:0;right:0;bottom:0;width:360px;background:var(--white);border-left:2px solid var(--border);z-index:600;padding:32px;overflow-y:auto;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:-8px 0 32px rgba(13,34,64,.15)}
+.cart-panel.open{transform:translateX(0)}
+.cart-hd{font-family:'Playfair Display',serif;font-size:24px;color:var(--navy);margin-bottom:4px}
+.cart-sub{font-size:11px;color:var(--text3);margin-bottom:24px;font-family:'DM Mono',monospace}
+.cart-item{background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.ci-icon{font-size:18px}
+.ci-name{font-size:12px;font-weight:700;color:var(--navy)}
+.ci-lvl{font-size:10px;color:var(--text3);font-family:'DM Mono',monospace}
+.ci-remove{margin-left:auto;font-size:14px;color:var(--text3);cursor:pointer}
+.ci-remove:hover{color:var(--red)}
+.cart-empty{font-size:12px;color:var(--text3);text-align:center;padding:40px 0;line-height:1.8}
+.cart-cta{margin-top:20px;width:100%;background:var(--navy);color:var(--white);border:none;padding:14px;font-weight:700;font-size:12px;letter-spacing:1px;cursor:pointer;border-radius:10px;transition:all .2s;font-family:'Outfit',sans-serif}
+.cart-cta:hover{background:var(--navy2);transform:translateY(-1px)}
+.cart-close{position:absolute;top:20px;right:20px;background:none;border:none;color:var(--text3);font-size:22px;cursor:pointer}
+footer{background:var(--navy);padding:32px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.foot-left{font-size:12px;color:rgba(255,255,255,.6);line-height:1.8}
+.foot-left strong{color:var(--gold3)}
+.foot-links{display:flex;gap:16px}
+.foot-links a{font-size:11px;color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s;font-family:'DM Mono',monospace}
+.foot-links a:hover{color:var(--gold3)}
+.fade{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.fade.vis{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+  header{padding:14px 20px}
+  nav .hide-sm{display:none}
+  .hero{grid-template-columns:1fr;padding:36px 20px;gap:36px}
+  h1{font-size:38px}
+  .section{padding:36px 20px}
+  .projects-grid{grid-template-columns:1fr}
+  .cart-panel{width:100%}
+  footer{padding:24px 20px;flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>⚖️ COMPLIANCE ANALYST</span><span>· AML / KYC / EDD ·</span>
+    <span>📊 RISK MONITORING & TESTING</span><span>· CONTROL GAP IDENTIFICATION ·</span>
+    <span>🌍 OPEN TO RELOCATION GLOBALLY</span><span>· 🥋 NATIONAL TAEKWONDO ATHLETE ·</span>
+    <span>✍️ LEGALLY PSYCHED LEGAL BLOGGER</span><span>· REGULATORY RESEARCH ·</span>
+    <span>⚖️ COMPLIANCE ANALYST</span><span>· AML / KYC / EDD ·</span>
+    <span>📊 RISK MONITORING & TESTING</span><span>· CONTROL GAP IDENTIFICATION ·</span>
+    <span>🌍 OPEN TO RELOCATION GLOBALLY</span><span>· 🥋 NATIONAL TAEKWONDO ATHLETE ·</span>
+    <span>✍️ LEGALLY PSYCHED LEGAL BLOGGER</span><span>· REGULATORY RESEARCH ·</span>
+  </div>
+</div>
+<header>
+  <div class="logo">
+    <div class="logo-icon">🛒</div>
+    <div><div class="logo-text">The Compliance Cart</div><div class="logo-sub">ANJU YADAV INTERACTIVE RESUME</div></div>
+  </div>
+  <nav>
+    <a href="#skills" class="hide-sm">SKILLS</a>
+    <a href="#experience" class="hide-sm">EXPERIENCE</a>
+    <a href="#projects" class="hide-sm">PROJECTS</a>
+    <a href="#publications" class="hide-sm">WRITINGS</a>
+    <a href="#education" class="hide-sm">ORIGIN</a>
+    <a href="#languages" class="hide-sm">LANGUAGES</a>
+    <a href="#roles" class="hide-sm">OPEN ROLES</a>
+    <a href="#" onclick="openCart(event)" class="nav-cart" id="cartBtn">🛒 SHORTLIST <span class="cart-badge" id="cartCount">0</span></a>
+    <a href="mailto:advanju21099@gmail.com" class="nav-hire">📩 HIRE ME</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="fade">
+    <div class="avail-tag"><span class="pulse"></span>AVAILABLE FOR IMMEDIATE JOINING</div>
+    <h1>Anju<br><em>Yadav</em></h1>
+    <p class="hero-desc">LLB from Campus Law Centre, Faculty of Law, University of Delhi. Specialising in compliance monitoring and testing, AML/CTF, KYC due diligence, control gap identification, and regulatory research across financial services environments.<br><br>📍 New Delhi &nbsp;·&nbsp; 🎓 LLB, Campus Law Centre &nbsp;·&nbsp; ⚡ 7 Months Experience</p>
+    <div class="reloc-tag">✈️ OPEN TO RELOCATION GLOBALLY</div>
+    <div class="hero-ctas">
+      <a href="mailto:advanju21099@gmail.com" class="btn btn-navy">📩 Contact Me</a>
+      <a href="https://www.linkedin.com/in/anju-yadav-0382b2261" target="_blank" class="btn btn-outline">🔗 LinkedIn</a>
+      <a href="https://medium.com/@Legallypsyched" target="_blank" class="btn btn-outline">✍️ My Blog</a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">🥋 National Taekwondo Athlete</span>
+      <span class="badge">🏆 IAYP Silver Award</span>
+      <span class="badge">📝 Legally Psyched Author</span>
+      <span class="badge">✏️ Executive Editor, Awaaz Blog</span>
+    </div>
+  </div>
+  <div class="dash-grid fade">
+    <div class="stat-row">
+      <div class="stat-card sc-green"><div class="stat-label">KYC / AML REVIEWS</div><div class="stat-val">30+</div><div class="stat-note">100% first-submission acceptance</div></div>
+      <div class="stat-card sc-gold"><div class="stat-label">AGREEMENTS REVIEWED</div><div class="stat-val">15+</div><div class="stat-note">NDAs, contracts, pledges</div></div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-card sc-navy"><div class="stat-label">RISKS IDENTIFIED</div><div class="stat-val">18</div><div class="stat-note">Across 6 compliance domains</div></div>
+      <div class="stat-card sc-teal"><div class="stat-label">CRITICAL GAPS</div><div class="stat-val">7</div><div class="stat-note">Control gaps uncovered</div></div>
+    </div>
+    <div class="meter-card">
+      <div class="meter-hd">SKILL PROFICIENCY DASHBOARD</div>
+      <div class="m-row"><span class="m-name">AML / PMLA / CTF</span><div class="m-bar"><div class="m-fill" style="background:var(--green)" data-w="90"></div></div><span class="m-pct">90%</span></div>
+      <div class="m-row"><span class="m-name">KYC / KYTP / EDD</span><div class="m-bar"><div class="m-fill" style="background:var(--navy)" data-w="88"></div></div><span class="m-pct">88%</span></div>
+      <div class="m-row"><span class="m-name">Regulatory Research</span><div class="m-bar"><div class="m-fill" style="background:var(--gold)" data-w="87"></div></div><span class="m-pct">87%</span></div>
+      <div class="m-row"><span class="m-name">Control Gap Analysis</span><div class="m-bar"><div class="m-fill" style="background:var(--teal)" data-w="84"></div></div><span class="m-pct">84%</span></div>
+      <div class="m-row"><span class="m-name">Contract Review</span><div class="m-bar"><div class="m-fill" style="background:var(--amber)" data-w="82"></div></div><span class="m-pct">82%</span></div>
+      <div class="m-row"><span class="m-name">DPDP Act 2023 / GDPR</span><div class="m-bar"><div class="m-fill" style="background:var(--teal)" data-w="80"></div></div><span class="m-pct">80%</span></div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="skills">
+  <div class="sec-hd fade">
+    <div class="sec-title">🛍️ Skills on the Shelf</div>
+    <div class="sec-tag">CLICK TO SHORTLIST</div>
+    <div class="sec-count">Add skills to your recruiter cart</div>
+  </div>
+  <div class="skills-grid">
+    <div class="sk-card fade" onclick="cart('AML / PMLA','Expert · Financial Crime','⚖️',this)"><div class="sk-badge badge-best">BEST SELLER</div><div class="sk-icon">⚖️</div><div class="sk-name">AML / PMLA</div><div class="sk-lvl">Expert · Financial Crime</div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('KYC / KYTP / EDD','Expert · Due Diligence','🔍',this)"><div class="sk-badge badge-hot">HOT</div><div class="sk-icon">🔍</div><div class="sk-name">KYC / KYTP / EDD</div><div class="sk-lvl">Expert · Due Diligence</div><div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Control Gap ID','Advanced · Risk Controls','🎯',this)"><div class="sk-badge badge-best">BEST SELLER</div><div class="sk-icon">🎯</div><div class="sk-name">Control Gap ID</div><div class="sk-lvl">Advanced · Risk Controls</div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Compliance Monitoring','Advanced · Testing','📊',this)"><div class="sk-badge badge-best">BEST SELLER</div><div class="sk-icon">📊</div><div class="sk-name">Compliance Monitoring</div><div class="sk-lvl">Advanced · Testing</div><div class="sk-bar"><div class="sk-fill" style="width:86%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Third-Party DD','Advanced · 30+ Files','🏢',this)"><div class="sk-icon">🏢</div><div class="sk-name">Third-Party DD</div><div class="sk-lvl">Advanced · 30+ Files</div><div class="sk-bar"><div class="sk-fill" style="width:87%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('GDPR / DPDP 2023','Advanced · Privacy Ops','🔒',this)"><div class="sk-badge badge-new">NEW</div><div class="sk-icon">🔒</div><div class="sk-name">GDPR / DPDP 2023</div><div class="sk-lvl">Advanced · Privacy Ops</div><div class="sk-bar"><div class="sk-fill" style="width:82%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Contract Review','Advanced · 15+ Agreements','📝',this)"><div class="sk-icon">📝</div><div class="sk-name">Contract Review</div><div class="sk-lvl">Advanced · 15+ Agreements</div><div class="sk-bar"><div class="sk-fill" style="width:84%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('M&A Due Diligence','Advanced · LODRs','🤝',this)"><div class="sk-badge badge-new">NEW</div><div class="sk-icon">🤝</div><div class="sk-name">M&A Due Diligence</div><div class="sk-lvl">Advanced · LODRs</div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Regulatory Research','Expert · SEBI RBI FEMA','🏛️',this)"><div class="sk-badge badge-best">BEST SELLER</div><div class="sk-icon">🏛️</div><div class="sk-name">Regulatory Research</div><div class="sk-lvl">Expert · SEBI RBI FEMA</div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('STR / CTR / FIU-IND','Intermediate · Reporting','📋',this)"><div class="sk-icon">📋</div><div class="sk-name">STR / CTR / FIU-IND</div><div class="sk-lvl">Intermediate · Reporting</div><div class="sk-bar"><div class="sk-fill" style="width:74%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('SRR / Data Rights','Intermediate · Privacy Ops','🗂️',this)"><div class="sk-badge badge-new">NEW</div><div class="sk-icon">🗂️</div><div class="sk-name">SRR / Data Rights</div><div class="sk-lvl">Intermediate · Privacy Ops</div><div class="sk-bar"><div class="sk-fill" style="width:72%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('MS Excel','Advanced · Pivot Tables','📈',this)"><div class="sk-icon">📈</div><div class="sk-name">MS Excel</div><div class="sk-lvl">Advanced · Pivot Tables</div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Legal Research DBs','Expert · SCC Manupatra','⚡',this)"><div class="sk-icon">⚡</div><div class="sk-name">Legal Research DBs</div><div class="sk-lvl">Expert · SCC Manupatra</div><div class="sk-bar"><div class="sk-fill" style="width:92%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('SaaS Legal Compliance','Intermediate · MSA DPA','💻',this)"><div class="sk-badge badge-new">NEW</div><div class="sk-icon">💻</div><div class="sk-name">SaaS Legal Compliance</div><div class="sk-lvl">Intermediate · MSA DPA</div><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('Escalation Management','Advanced · 100% Accepted','🚀',this)"><div class="sk-icon">🚀</div><div class="sk-name">Escalation Management</div><div class="sk-lvl">Advanced · 100% Accepted</div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+    <div class="sk-card fade" onclick="cart('MIS Reporting','Advanced · KPI Dashboards','📉',this)"><div class="sk-icon">📉</div><div class="sk-name">MIS Reporting</div><div class="sk-lvl">Advanced · KPI Dashboards</div><div class="sk-bar"><div class="sk-fill" style="width:82%"></div></div></div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="experience">
+  <div class="sec-hd fade">
+    <div class="sec-title">🧾 Purchase History</div>
+    <div class="sec-tag">WORK EXPERIENCE</div>
+    <div class="sec-count">3 engagements · Click to expand</div>
+  </div>
+  <div class="exp-list">
+    <div class="exp-card fade" onclick="toggleExp(this)">
+      <div class="exp-logo">⚖️</div>
+      <div>
+        <div class="exp-title">Legal & Compliance Intern</div>
+        <div class="exp-firm">Lex Icon</div>
+        <div class="exp-meta">📍 Delhi &nbsp;·&nbsp; 📅 Jul 2025 – Nov 2025 &nbsp;·&nbsp; ⏱️ 5 months</div>
+        <div class="exp-tags"><span class="etag">KYC/KYTP</span><span class="etag">AML/PMLA</span><span class="etag">Due Diligence</span><span class="etag">Contract Review</span><span class="etag">Regulatory Research</span><span class="etag">M&A Support</span><span class="etag">GDPR / DPDP 2023</span></div>
+        <ul class="exp-bullets">
+          <li>Achieved 100% first-submission acceptance across 30+ KYC/KYTP rolling reviews spanning corporate records, constitutional documents (MOA, AOA), and beneficial ownership assessments. Zero revision requests from senior counsel across a 5-month engagement.</li>
+          <li>Identified and escalated 4 regulatory policy deviations within 2 months by analysing requirements across SEBI, RBI, Banking Regulation Act, and Master Directions. Each finding translated into a clear actionable recommendation and actioned without follow-up.</li>
+          <li>Flagged 10+ suspicious and unusual documents through structured risk-based assessment. Every escalation directly actioned by senior counsel, with no supplementary clarification required.</li>
+          <li>Redlined 15+ commercial agreements including NDAs, service contracts, and pledge deeds, and contributed to M&A due diligence across 3+ transactions including requisition list chapters and LODRs, delivered within agreed timelines.</li>
+          <li>Vetted capital markets documentation against SEBI ODI granular disclosure requirements, BASEL III Tier 1 thresholds, and lock-in norms, producing deviation reports that directly informed client risk management and documentation remediation strategies.</li>
+          <li>Authored comparative analysis of GDPR and DPDP Act 2023 covering data subject rights, consent frameworks, and cross-border transfer obligations. Adopted as a reference document across subsequent client advisory matters.</li>
+          <li>Cut per-file review time by 7 minutes by developing structured legal review flowcharts for agreements and organisational documents, improving consistency across the team.</li>
+        </ul>
+        <div class="exp-toggle">▼ expand details</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><span class="pill pill-done">✓ COMPLETED</span><span class="pill pill-top">Highest Impact</span></div>
+    </div>
+    <div class="exp-card fade" onclick="toggleExp(this)">
+      <div class="exp-logo">📊</div>
+      <div>
+        <div class="exp-title">Compliance Intern</div>
+        <div class="exp-firm">Wadhwa & Wadhwa Law Office</div>
+        <div class="exp-meta">📍 Delhi &nbsp;·&nbsp; 📅 Feb 2025 – Mar 2025 &nbsp;·&nbsp; ⏱️ 2 months</div>
+        <div class="exp-tags"><span class="etag">SEBI/RBI</span><span class="etag">Excel Dashboards</span><span class="etag">MIS Reporting</span><span class="etag">Process Improvement</span></div>
+        <ul class="exp-bullets">
+          <li>Built an Excel-based compliance tracking dashboard monitoring statutory filing deadlines and regulatory obligations across multiple stakeholder teams eliminating missed filings entirely over a 2-month engagement.</li>
+          <li>Produced KPI-style MIS reports and senior management presentations within 2 business days, accepted first submission by senior partners across all reporting cycles.</li>
+          <li>Designed 3 standardised reporting templates for recurring compliance tasks, cutting per-report preparation time and driving continuous improvement in legal service delivery.</li>
+        </ul>
+        <div class="exp-toggle">▼ expand details</div>
+      </div>
+      <div><span class="pill pill-done">✓ COMPLETED</span></div>
+    </div>
+    <div class="exp-card fade" onclick="toggleExp(this)">
+      <div class="exp-logo">🏛️</div>
+      <div>
+        <div class="exp-title">Legal Research Intern</div>
+        <div class="exp-firm">Jainth & Solicitors</div>
+        <div class="exp-meta">📍 Delhi &nbsp;·&nbsp; 📅 Jun 2023 – Jul 2023 &nbsp;·&nbsp; ⏱️ 2 months</div>
+        <div class="exp-tags"><span class="etag">Legal Research</span><span class="etag">SCC Online</span><span class="etag">GST Tribunal</span><span class="etag">Trademarks Act</span></div>
+        <ul class="exp-bullets">
+          <li>Researched and summarised 12+ GST tribunal rulings using SCC Online and Boolean search methodology, delivering findings within same-day turnaround windows zero revision requests from supervising attorneys.</li>
+          <li>Drafted 8+ trademark examination objection responses under Sections 9 and 11 of the Trademarks Act 1999.</li>
+        </ul>
+        <div class="exp-toggle">▼ expand details</div>
+      </div>
+      <div><span class="pill pill-done">✓ COMPLETED</span></div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="projects">
+  <div class="sec-hd fade">
+    <div class="sec-title">⭐ Featured Products</div>
+    <div class="sec-tag">PORTFOLIO PROJECTS</div>
+    <div class="sec-count">4 projects</div>
+  </div>
+  <div class="projects-grid">
+    <div class="proj-card fade">
+      <div class="proj-hd"><div class="proj-icon">⚖️</div><div><div class="proj-name">Cross-Border M&A Transaction Portfolio</div><div class="proj-type">M&A · SPA · Clifford Chance Standards</div></div></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">FEMA / RBI</span><span class="ptag">DPDP Act 2023</span><span class="ptag">SPA Drafting</span><span class="ptag">UK PE Acquisition</span><span class="ptag">Red Flag Analysis</span></div>
+        <div class="proj-desc">Cross-border share purchase transaction support portfolio simulating a UK PE acquisition of an Indian fintech. Due diligence index across 34 documents, 3 red flags with RAG status, SPA key terms summary, and 5 amendment instructions built to Clifford Chance Legal Specialist standards.</div>
+        <div class="proj-metrics"><div class="metric"><div class="metric-val">34</div><div class="metric-lbl">Documents</div></div><div class="metric"><div class="metric-val">3</div><div class="metric-lbl">Red Flags</div></div><div class="metric"><div class="metric-val">5</div><div class="metric-lbl">Amendments</div></div></div>
+        <a href="https://anjuyadavcompcart.github.io/mergersandacquisitionportfolio-/#keyterms" target="_blank" class="proj-link">🔗 View Live Portfolio →</a>
+      </div>
+    </div>
+    <div class="proj-card fade">
+      <div class="proj-hd"><div class="proj-icon">📊</div><div><div class="proj-name">PayTrust Compliance Risk Assessment</div><div class="proj-type">AML/CTF · Fintech · Control Testing</div></div></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">AML/PMLA</span><span class="ptag">KYC/CTF</span><span class="ptag">DPDP Act 2023</span><span class="ptag">RBI Digital Lending</span><span class="ptag">Third-Party Risk</span></div>
+        <div class="proj-desc">End-to-end compliance risk assessment for a fintech startup. Designed risk register across 6 domains, conducted control effectiveness testing across 12 controls, identified monitoring breaks, and produced 4-page executive summary with live remediation dashboard.</div>
+        <div class="proj-metrics"><div class="metric"><div class="metric-val">18</div><div class="metric-lbl">Risks Mapped</div></div><div class="metric"><div class="metric-val">7</div><div class="metric-lbl">Critical Gaps</div></div><div class="metric"><div class="metric-val">40%</div><div class="metric-lbl">Time Saved</div></div></div>
+        <a href="https://scented-ticket-54d.notion.site/PayTrust-Fintech-Compliance-Risk-Assessment-30a8689fbf278017a0e5c1702dda2955" target="_blank" class="proj-link">🔗 View Live Report →</a>
+      </div>
+    </div>
+    <div class="proj-card fade">
+      <div class="proj-hd"><div class="proj-icon">💻</div><div><div class="proj-name">SaaS Startup: Legal Blueprint</div><div class="proj-type">Startup Law · DPDP · IP · Contracts</div></div></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">Pvt Ltd Incorporation</span><span class="ptag">DPDP/DPIA</span><span class="ptag">IP Assignment</span><span class="ptag">MSA/SLA/DPA</span><span class="ptag">GST/TAN</span><span class="ptag">Cyber Liability</span></div>
+        <div class="proj-desc">Comprehensive 7-phase legal compliance blueprint for a B2B SaaS startup from incorporation to first sale. Mapped all legal, regulatory, and data protection obligations including DPDP Act, IP Assignment, Trademark, MSA drafting, and cyber liability with budget and timeline across each phase.</div>
+        <div class="proj-metrics"><div class="metric"><div class="metric-val">7</div><div class="metric-lbl">Phases</div></div><div class="metric"><div class="metric-val">20</div><div class="metric-lbl">Checklist Items</div></div><div class="metric"><div class="metric-val">₹2.3L</div><div class="metric-lbl">Budget Mapped</div></div></div>
+        <a href="https://medium.com/@Legallypsyched/from-incorporation-to-first-sale-a-legal-blueprint-every-saas-founder-should-read-77291385e63f" target="_blank" class="proj-link">📖 Read Article →</a>
+      </div>
+    </div>
+    <div class="proj-card fade">
+      <div class="proj-hd"><div class="proj-icon">🔎</div><div><div class="proj-name">Mock Internal Investigation</div><div class="proj-type">Forensic · Control Testing · Excel Analysis</div></div></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">Excel Pivot Tables</span><span class="ptag">Anomaly Detection</span><span class="ptag">Narrative Documentation</span><span class="ptag">Risk Remediation</span></div>
+        <div class="proj-desc">Simulated end-to-end internal investigation for an expense fraud scenario. Analysed transaction records using Excel pivot tables, sorting, and conditional formatting to detect suspicious activity patterns. Documented findings in narrative format with corrective-action recommendations for management review.</div>
+        <div class="proj-metrics"><div class="metric"><div class="metric-val">E2E</div><div class="metric-lbl">Workflow</div></div><div class="metric"><div class="metric-val">Excel</div><div class="metric-lbl">Analysis Tool</div></div><div class="metric"><div class="metric-val">✓</div><div class="metric-lbl">Documented</div></div></div>
+        <span class="proj-link-muted">📁 Internal Case File</span>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="publications">
+  <div class="sec-hd fade">
+    <div class="sec-title">✍️ Published Writings</div>
+    <div class="sec-tag">LEGALLY PSYCHED · MEDIUM</div>
+    <div class="sec-count"><a href="https://medium.com/@Legallypsyched" target="_blank" style="color:var(--gold);text-decoration:none;font-family:'DM Mono',monospace;font-size:11px">View all →</a></div>
+  </div>
+  <p class="fade" style="font-size:12px;color:var(--text2);margin-bottom:24px;max-width:620px;line-height:1.8;"><em>Legally Psyched</em> is Anju's Medium publication simplifying law, compliance, M&A, and regulatory developments for students and anyone who finds legal language unnecessarily complicated.</p>
+  <div class="pub-grid">
+    <a href="https://medium.com/@Legallypsyched/the-dawn-of-corporate-cyber-accountability-why-boardrooms-are-now-ground-zero-in-the-digital-war-0d3c28fb2d38" target="_blank" class="pub-card fade">
+      <div class="pub-cat cat-cyber">🛡️ CYBER LAW</div>
+      <div class="pub-title">The Dawn of Corporate Cyber Accountability: Why Boardrooms Are Now Ground Zero</div>
+      <div class="pub-sub">It's 3 AM. A Fortune 500 CEO gets a call. What the digital war means for boardroom accountability and legal liability.</div>
+      <div class="pub-footer"><span class="pub-date">Aug 2025</span><span class="pub-arrow">→</span></div>
+    </a>
+    <a href="https://medium.com/@Legallypsyched/making-m-a-concepts-accessible-accretion-dilution-valuation-46aaae5c8443" target="_blank" class="pub-card fade">
+      <div class="pub-cat cat-ma">📈 M&A · EDUCATION</div>
+      <div class="pub-title">Making M&A Concepts Accessible Accretion, Dilution, Valuation</div>
+      <div class="pub-sub">When two companies come together, the first question is simple: will shareholders get more value, or less? Explained clearly for non-lawyers.</div>
+      <div class="pub-footer"><span class="pub-date">Oct 2025</span><span class="pub-arrow">→</span></div>
+    </a>
+    <a href="https://medium.com/@Legallypsyched/the-discount-dilemma-how-indias-e-commerce-war-turned-into-a-legal-battle-over-predatory-pricing-989e5ffe81c0" target="_blank" class="pub-card fade">
+      <div class="pub-cat cat-ecom">🛒 COMPETITION LAW</div>
+      <div class="pub-title">The Discount Dilemma: India's E-Commerce War and Predatory Pricing</div>
+      <div class="pub-sub">How Amazon and Flipkart's aggressive discount strategies crossed into legal grey zones under Indian competition law.</div>
+      <div class="pub-footer"><span class="pub-date">Aug 2025</span><span class="pub-arrow">→</span></div>
+    </a>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="certs">
+  <div class="sec-hd fade"><div class="sec-title">🏅 Loyalty Points</div><div class="sec-tag">CERTIFICATIONS</div></div>
+  <div class="cert-grid">
+    <div class="cert-card fade"><div class="cert-icon">🏦</div><div><div class="cert-name">Financing Structures & Credit Risk</div><div class="cert-org">Clifford Chance Selected Commercial Training</div><div class="cert-pts">★ 500 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">📈</div><div><div class="cert-name">Financial Literacy for Bharat</div><div class="cert-org">NISM National Institute of Securities Market · Jun 2025</div><div class="cert-pts">★ 350 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">🔒</div><div><div class="cert-name">Introduction to Privacy</div><div class="cert-org">IAPP International Assoc. of Privacy Professionals</div><div class="cert-pts">★ 400 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">🌐</div><div><div class="cert-name">Google Privacy Fundamentals</div><div class="cert-org">Google Privacy & Data Protection</div><div class="cert-pts">★ 300 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">💡</div><div><div class="cert-name">General Course on Intellectual Property</div><div class="cert-org">WIPO World Intellectual Property Organization · Sep 2025</div><div class="cert-pts">★ 250 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">🔬</div><div><div class="cert-name">McKinsey Forward Program</div><div class="cert-org">McKinsey & Company</div><div class="cert-pts">★ 450 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">🏛️</div><div><div class="cert-name">IB Virtual Job Simulation</div><div class="cert-org">JPMorgan Chase Forage</div><div class="cert-pts">★ 200 COMPLIANCE POINTS</div></div></div>
+    <div class="cert-card fade"><div class="cert-icon">⚡</div><div><div class="cert-name">Legal Research Certificate</div><div class="cert-org">Manupatra · March 2025</div><div class="cert-pts">★ 150 COMPLIANCE POINTS</div></div></div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="education">
+  <div class="sec-hd fade"><div class="sec-title">🎓 Origin Story</div><div class="sec-tag">EDUCATION</div></div>
+  <div class="edu-timeline">
+    <div class="edu-card fade">
+      <div class="edu-icon">⚖️</div>
+      <div>
+        <div class="edu-deg">Advocate · LLB, Bachelor of Laws</div>
+        <div class="edu-inst">Campus Law Centre, Faculty of Law, University of Delhi</div>
+        <div class="edu-meta">📅 Dec 2022 – Jul 2025</div>
+        <div class="edu-tags"><span class="etag">Corporate Law</span><span class="etag">Banking Law</span><span class="etag">Contract Act</span><span class="etag">Criminal Law</span><span class="etag">IPR</span><span class="etag">Constitutional Law</span></div>
+        <div class="edu-note">One of India's most prestigious law faculties. Focused on corporate, banking, and financial services law alongside compliance and regulatory frameworks. Executive Editor, Awaaz Blog, Legal Aid Society (2023–2025). Participant, K.K. Luthra Memorial Moot Court Competition. Campus Representative for Shiksha.com. Volunteer, Sankalp NGO Legal rights awareness.</div>
+      </div>
+      <div><span class="pill pill-done">✓ GRADUATED</span></div>
+    </div>
+    <div class="edu-card fade">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-deg">B.A. Political Science (Hons)</div>
+        <div class="edu-inst">Daulat Ram College, University of Delhi</div>
+        <div class="edu-meta">📅 Jul 2018 – Aug 2021 &nbsp;·&nbsp; 🏆 1st Division 69.7%</div>
+        <div class="edu-tags"><span class="etag">Political Economy</span><span class="etag">Constitutional Studies</span><span class="etag">Research Methods</span><span class="etag">Public Policy</span></div>
+      </div>
+      <div><span class="pill pill-done">✓ GRADUATED</span></div>
+    </div>
+    <div class="edu-card fade">
+      <div class="edu-icon">🏫</div>
+      <div>
+        <div class="edu-deg">Class XII Arts Stream</div>
+        <div class="edu-inst">Vidya Devi Jindal School, Hisar</div>
+        <div class="edu-meta">📅 2018 &nbsp;·&nbsp; 🏆 School Topper Geography · 94%, 1st Division</div>
+        <div class="edu-tags"><span class="etag">Arts Graduate</span><span class="etag">Geography School Topper</span><span class="etag">Residential School</span></div>
+        <div class="edu-note">Boarding school from age seven where precision, self-reliance, and the discipline of doing things right when no one is watching became habits, not choices. The foundation behind every audit-ready output and zero-revision escalation report since.</div>
+      </div>
+      <div><span class="pill" style="background:var(--blue-bg);color:var(--blue);border:1px solid rgba(30,77,140,.2)">✓ 2018</span></div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="languages">
+  <div class="sec-hd fade"><div class="sec-title">🌐 Languages</div><div class="sec-tag">COMMUNICATION</div></div>
+  <div class="lang-grid">
+    <div class="lang-card fade">
+      <div class="lang-flag">🇬🇧</div><div class="lang-name">English</div><div class="lang-level">FULL PROFESSIONAL PROFICIENCY</div>
+      <div class="lang-dots"><div class="lang-dot filled"></div><div class="lang-dot filled"></div><div class="lang-dot filled"></div><div class="lang-dot filled"></div><div class="lang-dot filled"></div></div>
+    </div>
+    <div class="lang-card fade">
+      <div class="lang-flag">🇮🇳</div><div class="lang-name">Hindi</div><div class="lang-level">NATIVE PROFICIENCY</div>
+      <div class="lang-dots"><div class="lang-dot filled"></div><div class="lang-dot filled"></div><div class="lang-dot filled"></div><div class="lang-dot filled"></div><div class="lang-dot filled"></div></div>
+    </div>
+    <div class="lang-card fade">
+      <div class="lang-flag">🇫🇷</div><div class="lang-name">French</div><div class="lang-level">ELEMENTARY PROFICIENCY</div>
+      <div class="lang-dots"><div class="lang-dot filled"></div><div class="lang-dot"></div><div class="lang-dot"></div><div class="lang-dot"></div><div class="lang-dot"></div></div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<section class="section" id="roles">
+  <div class="sec-hd fade"><div class="sec-title">🎯 Currently Targeting</div><div class="sec-tag">OPEN TO ROLES</div><div class="sec-count">0–2 years · Open to Relocation</div></div>
+  <div class="roles-grid">
+    <div class="role-card fade"><div class="role-icon">🛡️</div><div class="role-title">Compliance Analyst</div><div class="role-note">AML/CTF · Risk Controls</div><div class="match-row"><span class="match-pct">92%</span><div class="match-bar"><div class="match-fill" style="width:92%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">🔍</div><div class="role-title">AML / CTF Analyst</div><div class="role-note">Financial Crime · KYC</div><div class="match-row"><span class="match-pct">90%</span><div class="match-bar"><div class="match-fill" style="width:90%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">📊</div><div class="role-title">Risk Monitoring Analyst</div><div class="role-note">QA · Controls Testing</div><div class="match-row"><span class="match-pct">88%</span><div class="match-bar"><div class="match-fill" style="width:88%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">📋</div><div class="role-title">Legal Operations</div><div class="role-note">Data · Contracts · COE</div><div class="match-row"><span class="match-pct">88%</span><div class="match-bar"><div class="match-fill" style="width:88%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">⚖️</div><div class="role-title">Conflicts Analyst</div><div class="role-note">Due Diligence · Research</div><div class="match-row"><span class="match-pct">87%</span><div class="match-bar"><div class="match-fill" style="width:87%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">🏛️</div><div class="role-title">Legal Associate</div><div class="role-note">Corporate · Banking</div><div class="match-row"><span class="match-pct">85%</span><div class="match-bar"><div class="match-fill" style="width:85%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">🏦</div><div class="role-title">KYC / EDD Analyst</div><div class="role-note">High Risk · Refresh</div><div class="match-row"><span class="match-pct">85%</span><div class="match-bar"><div class="match-fill" style="width:85%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">🔒</div><div class="role-title">Privacy Operations</div><div class="role-note">DPDP · GDPR · SRR</div><div class="match-row"><span class="match-pct">84%</span><div class="match-bar"><div class="match-fill" style="width:84%"></div></div></div></div>
+    <div class="role-card fade"><div class="role-icon">💼</div><div class="role-title">Legal Consultant / Advisory</div><div class="role-note">Regulatory · GRC · Financial Services</div><div class="match-row"><span class="match-pct">86%</span><div class="match-bar"><div class="match-fill" style="width:86%"></div></div></div></div>
+  </div>
+  <div class="fade" style="margin-top:20px;background:var(--blue-bg);border:1px solid rgba(30,77,140,.2);border-radius:12px;padding:16px 20px;font-size:12px;color:var(--blue);line-height:1.8;">
+    ✈️ <strong>Open to relocation globally</strong>. Available for immediate joining.
+  </div>
+</section>
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+<div class="cart-panel" id="cartPanel">
+  <button class="cart-close" onclick="closeCart()">✕</button>
+  <div class="cart-hd">🛒 Your Shortlist</div>
+  <div class="cart-sub">Skills selected from Anju's profile</div>
+  <div id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty">Your cart is empty.<br>Click any skill above to add it here.</div>
+  <button class="cart-cta" onclick="window.location='mailto:advanju21099@gmail.com?subject=Interested in Hiring Anju Yadav&body=Hi Anju,%0A%0AI came across your Compliance Cart profile and would like to discuss an opportunity.%0A%0ARegards'">📩 PROCEED TO HIRE →</button>
+</div>
+<footer>
+  <div class="foot-left">🛒 <strong>The Compliance Cart</strong> Anju Yadav &nbsp;·&nbsp; Advocate · Open to Relocation<br><span style="font-size:10px;color:rgba(255,255,255,.4)">Built with intent, not templates. Every line earned.</span></div>
+  <div class="foot-links">
+    <a href="mailto:advanju21099@gmail.com">📩 Email</a>
+    <a href="tel:+917988904495">📞 +91 7988904495</a>
+    <a href="https://www.linkedin.com/in/anju-yadav-0382b2261" target="_blank">🔗 LinkedIn</a>
+    <a href="https://medium.com/@Legallypsyched" target="_blank">✍️ Medium</a>
+  </div>
+</footer>
+<script>
+let cartItems=[];
+function cart(name,level,icon,el){const idx=cartItems.findIndex(i=>i.name===name);if(idx>-1){cartItems.splice(idx,1);el.classList.remove('carted')}else{cartItems.push({name,level,icon});el.classList.add('carted')}renderCart();openCart()}
+function renderCart(){const wrap=document.getElementById('cartItems');const empty=document.getElementById('cartEmpty');const badge=document.getElementById('cartCount');wrap.innerHTML='';if(cartItems.length===0){empty.style.display='block';badge.style.display='none'}else{empty.style.display='none';badge.style.display='inline-flex';badge.textContent=cartItems.length;cartItems.forEach(item=>{wrap.innerHTML+=`<div class="cart-item"><span class="ci-icon">${item.icon}</span><div><div class="ci-name">${item.name}</div><div class="ci-lvl">${item.level}</div></div><span class="ci-remove" onclick="removeItem('${item.name}')">✕</span></div>`})}}
+function removeItem(name){cartItems=cartItems.filter(i=>i.name!==name);document.querySelectorAll('.sk-card').forEach(c=>{const n=c.querySelector('.sk-name');if(n&&n.textContent.trim()===name)c.classList.remove('carted')});renderCart();if(cartItems.length===0)closeCart()}
+function openCart(e){if(e)e.preventDefault();document.getElementById('cartPanel').classList.add('open');document.getElementById('cartOverlay').classList.add('open');document.body.style.overflow='hidden'}
+function closeCart(){document.getElementById('cartPanel').classList.remove('open');document.getElementById('cartOverlay').classList.remove('open');document.body.style.overflow=''}
+function toggleExp(card){const bullets=card.querySelector('.exp-bullets');const toggle=card.querySelector('.exp-toggle');if(!bullets)return;bullets.classList.toggle('open');if(toggle)toggle.textContent=bullets.classList.contains('open')?'▲ collapse':'▼ expand details'}
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('vis');entry.target.querySelectorAll('.m-fill').forEach(fill=>{const w=fill.getAttribute('data-w');if(w)setTimeout(()=>{fill.style.width=w+'%'},200)})}})},{threshold:0.08});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+setTimeout(()=>{document.querySelectorAll('.m-fill').forEach(fill=>{const w=fill.getAttribute('data-w');if(w)fill.style.width=w+'%'})},600);
+</script>
+</body>
+</html>
